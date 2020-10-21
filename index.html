@@ -1,69 +1,171 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset = "utf-8">
-            <title>This is a web page </title>
-            <meta name = "description" content>
-            <meta name = "author" content>      
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-            <script src="https://kit.fontawesome.com/c9a392e4e1.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="utf-8">
+    <title>FoodHunt </title>
+    <meta name="description" content>
+    <meta name="author" content>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
-            <!--font-family link-->
-            <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
-            
-            <!-- CSS only -->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-            
-            <!--css link-->
-            <link rel = "stylesheet" type = "text/css" href = "webpage.css">
-            <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-            
-         
-            
-        </head>
+    <script src="https://kit.fontawesome.com/c9a392e4e1.js" crossorigin="anonymous"></script>
 
-        <body>
-            <header class = "navigation ">
-                <div class = "brand">
-                    Food Hunt</div> 
-                    <!-- 
+    <!--font-family link-->
+    <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="favicon-wholec.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+    <header class="navigation ">
+        <div class="brand">
+            Food Hunt</div>
+        <!-- 
                     
                     Pakwaan        
                     Meal Hut                      
                     -->
-                <ul>
-                    <li class = "navItems active"><a href = "#">Home</a></li>
-                    <li class = "navItems"><a href = "#">Dine Out</a></li>
-                    <li class = "navItems"><a href = "#">SignUp</a></li>
-                    
-                </ul>
-            </header>
+        <ul>
+            <li class="navItems active"><a href="#">Home</a></li>
+            <li class="navItems"><a href="#">Dine Out</a></li>
+            <!-- <li class="navItems"> -->
+            <div class="login-box">
+                <a class="login-text" href="">Login</a>
+                <a class="login-btn" href="">
+                    <i class="far fa-user-circle"></i>
+                </a>
+            </div>
+            <!-- </li> -->
 
-            <section class = "banner">
-                <h2 class="">Food Hunt</h2>
-                <form action="">                    
-                    <div class="search">
-                        <select name="place" id="">
-                            <option value="">Banjara Hills</option>
-                            <option value="">Panjagutta</option>
-                            <option value="">SR Nagar</option>
-                            <option value="">Kukatpally</option>
-                        </select>
-                        <input type="search" class="search" placeholder="Search here..." name="" id="">
-                        <button type="submit" class = "btn btn-warning btn-md"><i class="fas fa-search"></i> </button>
-                    </div>
-                
-                
-            </section>
+        </ul>
+    </header>
+
+    <section class="banner">
+        <h2 class="">Food Hunt</h2>
+        <form action="">
+            <div class="search">
+                <select name="place" id="">
+                    <option value="">Banjara Hills</option>
+                    <option value="">Panjagutta</option>
+                    <option value="">SR Nagar</option>
+                    <option value="">Kukatpally</option>
+                </select>
+                <input type="search" class="search" placeholder="Search here..." name="" id="">
+                <button type="submit" class="btn btn-warning btn-md"><i class="fas fa-search"></i> </button>
+            </div>
+
+
+    </section>
+
+
+    <section class="catagories ">
+        <div class="container-fluid">
             
-               <!-- JS, Popper.js, and jQuery -->
-               <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-               <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-               
-               <!--javascript link-->
-               <script type = "text/javascript" src = "webpage.js"></script>
-        </body>
-    </html>
+            <div class="row justify-content-around">
+                <div class="card col-sm-6 col-md-5 col-lg-3 order-1 m-5 text-white">
+                <img class="cardImage"
+                        src="https://images.unsplash.com/photo-1584178639036-613ba57e5e39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        title="burger" alt="burger">
+                    <div class="card-img-overlay ">
+                        <h5 class="card-title">Burger</h5>
+                    </div>
+                </div>
 
+                <div class="col-sm-6 col-md-5 col-lg-3 m-5 order-sm-0 order-md-0 order-lg-1">
+                    <h3 class="cata ">Categories!</h3>
+    
+                </div>
+                
+                <div class="card col-sm-6 col-md-5 col-lg-3 order-1 m-5 text-white">
+                    <img class="cardImage"
+                        src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        title="Pizza" alt="pizza">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Pizza</h5>
+                    </div>
+                </div>
+
+                <div class="card col-sm-6 col-md-5 col-lg-3 order-1 m-5  text-white">
+                    <img class="cardImage" title="indian"
+                        src="https://images.unsplash.com/photo-1517244906-fa053b624b06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="indian">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Indian</h5>
+                    </div>
+                </div>
+
+                <div class="card col-sm-6 col-md-5 col-lg-3 order-1 m-5   text-white">
+                    <img class="cardImage"
+                        src="https://images.unsplash.com/photo-1542803417-f2be3270347d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        href="https://www.youtube.com" title="Chinese" alt='chinese'>
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Chinese</h5>
+                    </div>
+                </div>
+
+                <div class="card col-sm-6 col-md-5 col-lg-3 order-1 m-5  text-white">
+                    <img class="cardImage"
+                        src="https://images.unsplash.com/photo-1538301258798-f3fdb8bbc3c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        title="Salad" alt='Salad'>
+                    <div class="card-img-overlay" href="https://www.youtube.com/">
+                        <h5 class="card-title">Salad</h5>
+                    </div>
+                </div>
+
+                <div class="card col-sm-6 col-md-5 col-lg-3 order-1 m-5 text-white">
+                    <img class="cardImage"
+                        src="https://images.unsplash.com/photo-1505616485412-adfcd5561e31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        title="Ice Cream" alt='Ice cream'>
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Ice cream</h5>
+                    </div>
+                </div>
+
+                <div class="card col-sm-6 col-md-5 col-lg-3 order-1 m-5  text-white">
+                    <img class="cardImage"
+                        src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        title="Cakes&Candies" alt='Cakes&Candies'>
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Cakes&Candies</h5>
+                    </div>
+                </div>
+
+                <div class="card col-sm-6 col-md-5 col-lg-3 order-1 m-5  text-white">
+                    <img class="cardImage"
+                        src="https://images.unsplash.com/photo-1522039906375-50d8e4d9550a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        title="Shakes" alt='shakes'>
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Shakes</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <!--javascript link-->
+    <script type="text/javascript" src="webpage.js"></script>
+</body>
+
+</html>

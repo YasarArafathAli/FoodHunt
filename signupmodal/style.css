@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.backGround{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(91, 148, 89, 0.993);
+    background-position: top;
+    background-size: cover;
+}
+.modals{
+    
+    width: 350px;
+    height: 630px;
+    position: relative;
+    margin: 5% auto;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+.navigation{
+    position: relative;
+    width: 330px;
+    margin: 6% auto;
+     
+}
+.navigation .tablets{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: baseline;
+    /* align-items: flex-start; */
+}
+.nn{
+    padding: 3px;
+
+    width: 15%;
+
+}
+.tablets .sign{
+    text-decoration: none;
+    padding: 7px;
+   
+    border-radius: 35px;
+}
+.sign{
+    user-select: none;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+
+}
+
+.tablets a:active{
+    padding-left: 10px;
+    color: aqua;
+ 
+}
+.tablets a:hover{
+  
+    color: rgb(245, 157, 86);
+}
+
+
+
+.icons{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+    
+}
+
+
+.icons img{
+    user-select: none;
+    width: 43px;
+    height: 43px;
+    border: 5px solid white;
+    border-radius: 360px;
+    box-shadow: 7px 2px 3px rgba(0,0,0,0.5);
+    
+}
+
+.icons img:hover{
+    width: 50px;
+    height: 50px;
+    
+}
+.icons hr{
+    display: flex;
+    
+    margin-top: 20px;
+    width: 25%;
+    height: 15%;
+    
+}
+/* .or{
+    display: inline-flex;
+
+    
+    flex-direction: column;
+}*/
+.or{
+    display: block;
+    padding: 10px;
+    background-color: rgb(248, 248, 212);
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    margin: 7% auto;
+} 
+.or .sent{
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+}
+.or .cond{
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+}
+section{
+    margin-top: 0.5rem;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+section .form{
+    user-select: none;
+   font-size: x-large;
+   font-weight: 600;
+    
+}
+.form:hover{
+    color: palevioletred;
+}
+
+
+.password{
+    /* margin-top: 1rem; */
+}
+
+
+section input{
+    width: 15rem;
+    height: 2.3rem;
+    border-style: none;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+input:hover{
+    border: 5px solid cadetblue;
+    color: cadetblue;
+}
+
+.btn{
+    margin-top: 3rem;
+
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#logIn{
+    top: 300px;
+    
+}
+
+#Register{
+    top: 650px;
+}
+
+
+.pad{
+    
+}

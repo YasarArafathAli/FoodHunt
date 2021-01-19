@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a:visited{
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+.row{
+    width: 100%;
+}
+
+/* ol, ul {
+	list-style: none;
+} */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    line-height: 1;
+    font-family: "Dosis";
+}
+
+header.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(48, 45, 45); 
+    font-size: 1.5rem;
+    height: 70px;
+    padding: 10px 0 0px 10px;
+} 
+.brand{
+    margin-left: 40px;
+    user-select: none;
+    font-family: 'Kaushan Script', cursive;
+    border: #000000;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    transform: translateY(-15px);
+
+}
+.brand.large{
+    font-size: 50px;
+}
+
+span.hunt{
+    color: #ff6d2d;
+}
+
+.brand sub{
+    font-family: "Dosis", sans-serif;
+    font-size: 1rem;
+    position: relative;
+    left: 105px;
+    top: -30px;
+}
+.navigation ul{
+    
+    display: flex;
+    padding-right: 15px;
+   
+}
+.navItems {
+    display: inline-block;
+    padding-left: 10px;
+    
+    
+}
+
+.navItems a{
+    display: flex;
+    align-self: baseline;
+    /* border: #000000 2px solid; */
+    border-radius: 5px;
+    margin-top: 7px;
+    padding: 8px;
+    font-family: 'Istok Web';
+    font-weight: 600;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    color: white;
+    text-decoration: none;
+}
+
+.navItems a:hover , .navItems.active a{
+    /* background-color: #ff6d2d; */
+    color: white;
+    transform:  scale(1.1);
+    transition-timing-function: ease;
+}
+.navItems.active a{
+    background-color: #ff6d2d;
+    transform:  scale(1.1);
+    transition-timing-function: ease;
+    
+}
+
+.login-box:hover > .login-text{
+    width: 50px;
+
+
+}
+
+.login-box{
+    margin-top: 0.55rem;
+    position: relative;
+    bottom: 9px;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+    color: white;
+    align-items: center;
+    padding-bottom: 20px;
+    /* text-decoration: none; */
+}
+
+.login-btn{
+    /* margin-top: 0.55rem; */
+    color: white;
+    border-radius: 50px;
+    float: right;
+    text-decoration: none;
+}
+.far{
+    float: right;
+    color: white;
+    
+}
+.far:hover{
+    color: rgb(250, 239, 239);
+    transform:  scale(1.1);
+    transition-timing-function: ease;
+}
+
+.login-text{
+    
+    color: white;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    margin-top: 5px;
+    outline: none;
+    transition: 0.4s;
+    width: 0; 
+    font-size: 1rem;
+    font-family: 'Istok Web';
+    font-weight: 600; 
+}
+.login-box .login-text{
+    
+    text-decoration: none;
+}
+.login-text:hover{
+    /* background-color: #ff6d2d; */
+    color: rgb(255, 255, 255);
+    transform:  scale(1.1);
+    transition-timing-function: ease;
+}
+
+
+.banner{
+   
+    width: 100%;
+
+    background-image: linear-gradient( rgba(48, 45, 45, 0.3) , rgba(48, 45, 45, 0.9)), url("https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+
+}
+
+.banner h2{
+    cursor: pointer;
+    font-size: 3.5rem;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-shadow: 4px 2px 4px rgb(0, 0, 0);  /*  rgba(231, 117, 11, 0.808) */
+    font-family: 'Dosis', cursive;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    position: relative;
+    left: -350px;
+}
+
+.banner h2 titled{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+.banner .sub-title{
+    font-size: 1.5rem;
+    /* line-height: 2px; */
+    color: white;
+    position: relative;
+    top: -50px;
+    left: -350px;
+}
+
+.start{
+    position: relative;
+    left: -300px;
+    border: none;
+    box-shadow: 4px 4px rgba(48, 45, 45, 1);
+}
+.fas{
+    position: relative;
+    
+}
+.start:hover{
+    background-color: #ff6d2d;
+    color: white;
+}
+
+.start:hover > .fas{
+    
+    color: white;
+    transition: 0.5s;
+    left: 1px;
+}
+#restaurant-dtls{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+.restaurant-img{
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+#restaurant-dtls h2{
+    font-weight: 500;
+    font-size: 30px;
+    padding: 15px;
+}
+#restaurant-dtls p{
+    font-size: 20px;
+    padding: 0 15px 15px ;
+}
+#restaurant-dtls .recent-orders{
+    border-left: #000000 1px solid;
+}
+
+#restaurant-dtls ol li{
+    padding: 10px;
+
+}
+
+#current-dishes{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    padding-bottom: 3rem;
+}
+
+.card{
+    width: 1500px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    box-shadow: rgba(48, 45, 45, 0.6) 2px 2px;
+    border-radius: 5%;
+}
+
+.food-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    /* border: #ff6600 3px; */
+    box-shadow: rgba(0,0,0, 0.5) 2px 2px 2px;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.btn-group{
+    
+    font-weight: 50px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+#add-items{
+    margin: 20px;
+}
+#add-items h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#add-items form{
+    margin: auto;
+    
+}
+#add-items input,textarea{
+    width: 300px;
+    margin: 10px;
+    height: 30px;
+    /* border: none;
+    border-bottom: #000 10px; */
+}
+#add-items label{
+    width: 300px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/* ======================================footer====================== */
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    
+    }
+    .footerlink{
+        padding: 15px 0;
+        width: 90%;
+    }
+    
+    .link-block{
+        padding: 0;
+        padding-top: 50px;
+    }
+    
+    .social-media{
+        height: 150px;
+    }
+/* 
+#footer{
+    text-align: center;
+    padding: 7% 15%;
+    padding: 30px 0;
+    background-color: rgb(48, 45, 45);
+    color: #777;
+    font-size: 1rem;
+    
+}
+.social-media{
+    margin: 20px 10px;
+    color:#ffd100;
+    padding: 0 10px;
+}
+.social-media:hover{
+    color: #ff6600;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.footer-text{
+    padding-top: 20px;
+    font-family: 'Istok Web';
+    font-weight: bold;
+} */

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <title>Restraunt</title>
+        <meta name="description" content>
+        <meta name="author" content>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    
+        <script src="https://kit.fontawesome.com/c9a392e4e1.js" crossorigin="anonymous"></script>
+    
+        <!--font-family link-->
+        <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
+    
+        <!-- CSS framework -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+        <!--css link-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="shortcut icon" href="favicon-wholec.png" type="image/x-icon">    
+    </head>
+
+    <body>
+
+        <!------------------------------------------------- navigation section -------------------------------------------->
+        <header class="navigation">
+            <a href="../index.html">
+                <div class="brand">
+                Food<span class = "hunt">Hunt</span>
+            </div>
+            </a>
+          
+            <ul>
+                <li class="navItems"><a href="#">Home</a></li>
+                <li class="navItems active"><a href="#">Order now</a></li>
+              
+                <div class="login-box">
+                    <a class="login-text" data-toggle="modal" data-target="#LoginModal" href="">Login</a>
+                    <a class="login-btn" href="">
+                        <i class="far fa-user-circle"></i>
+                    </a>
+                </div>
+    
+            </ul>
+        </header>
+        <div class="menu-banner">
+            <form action="">
+                <div class="search">
+                    <select name="place" id="">
+                        <option value="">Banjara Hills</option>
+                        <option value="">Panjagutta</option>
+                        <option value="">SR Nagar</option>
+                        <option value="">Kukatpally</option>
+                    </select>
+                    <input type="search" class="search" placeholder="Search here..." name="" id="">
+                    <button type="submit" class="btn btn-warning btn-md"><i class="fas fa-search"></i> </button>
+                </div>
+        </div>
+
+        <div class = "container-fluid">
+            <div class = "row">
+                <!----------------------------------- side menu ------------------------------------------------->
+                <div  class = "side-container col-3  ">
+                    <div class = "side-menu ">
+                        <div class = "menu-head">
+                            <h3>Cuisines</h3>
+                        </div>
+                        <hr>
+                        <ul>
+                            <li class = "menu">
+                                <button class = "menu-items btn btn-default filter-button" data-filter="All" href = "#">
+                                    All
+                                </button>
+                            </li>
+                            <li class = "menu">
+                                <button class = "menu-items btn btn-default filter-button" data-filter="North-Indian" href = "#">
+                                    North Indian
+                                </button>
+                            </li>
+
+                            <li class = "menu">
+                                <button class = "menu-items btn btn-default filter-button" data-filter="South-Indian" href = "#">
+                                    South Indian
+                                </button>
+                            </li>
+                            <li class = "menu">
+                                <button class = "menu-items btn btn-default filter-button" data-filter="Pizza" href = "#">
+                                    Pizza
+                                </button>
+                            </li>
+                            <li class = "menu">
+                                <button class = "menu-items  btn btn-default filter-button" data-filter="Street-Food" href = "#">
+                                    Street Food
+                                </button>
+                            </li>
+                            <li class = "menu">
+                                <button class = "menu-items btn btn-default filter-button" data-filter="Burgers" href = "#">
+                                    Burgers
+                                </button>
+                            </li>
+                            <li class = "menu">
+                                <button class = "menu-items btn btn-default filter-button" data-filter="Desserts" href = "#">
+                                    Desserts
+                                </button>
+                            </li>
+                            
+                            <li class = "menu">
+                                <button class = "menu-items btn btn-default  filter-button" data-filter="Sea-Food" href = "#">
+                                    Sea Food
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-------------------------------- restraunt list ----------------------------------------------->
+                <div class = "rest-container col-9">
+                    <div class = "rest-list row flex-wrap justify-content-between">   
+
+                        <div class = "card filter center North-India">
+                            <img src = "https://img.etimg.com/thumb/msid-75892416,width-650,imgsize-890927,,resizemode-4,quality-100/like-many-other-top-chefs-adria-has-been-sharing-some-of-his-own-recipes-to-encourage-the-home-cooking-revolution-.jpg" class = "card-image">
+                            <div class = "card-body">
+                                <h5 class = "card-title">Ci Gusta</h5>
+                                <p class = "card-text">The most deliciuos and fresh sea food you could find</p>
+                                <div class = "card-details row">
+                                    <p class = "card-text card-text-time">ETA-30 min</p>
+                                    <i class="fa fa-heart p-0 m-o" aria-hidden="true"></i>
+                                    <i class="fa fa-heart p-0 m-o" aria-hidden="true"></i>
+                                    <i class="fa fa-heart p-0 m-o" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+
+                            <a href="../menu-foodhub/index.html" class = "btn btn-success">Order Now</a> 
+                            
+                        </div>
+                        <div class = "card filter center North-India">
+                            <img src = "https://www.gannett-cdn.com/presto/2020/02/17/USAT/80fa5afd-dd88-407d-aad1-9e25f8ad3b47-04_HOUSTON_Coronavirus_restaurants_021.JPG" class = "card-image">
+                            <div class = "card-body">
+                                <h5 class = "card-title">Ohri's</h5>
+                                <p class = "card-text">The most deliciuos and fresh sea food you could find</p>
+                                <div class = "card-details row">
+                                    <p class = "card-text card-text-time">ETA-20 min</p>
+                                    
+                                   <i class="fa fa-heart p-0 m-o" aria-hidden="true"></i>
+                                   <i class="fa fa-heart p-0 m-o" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+                            <a href="../menu-foodhub/index.html" class = "btn btn-success">Order Now</a> 
+
+                        </div>
+                       
+                      
+                        <div class = "card filter center South-India ">
+                            <img src = "https://blog.dineout-cdn.co.in/blog/wp-content/uploads/2019/11/rsz_101-1030x687.jpg" class = "card-image">
+                            <div class = "card-body">
+                                <h5 class = "card-title">Moonlight</h5>
+                                <p class = "card-text">The most deliciuos and fresh sea food you could find</p>
+                                <div class = "card-details ">
+                                    <p class = "card-text card-text-time">ETA-25 min</p>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+                            <a href="../menu-foodhub/index.html" class = "btn btn-success">Order Now</a> 
+
+                        </div> 
+
+                        <div class = "card filter center North-India">
+                            <img src = "https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg?size=626&ext=jpg" class = "card-image">
+                            <div class = "card-body">
+                                <h5 class = "card-title">Onesta</h5>
+                                <p class = "card-text">The most deliciuos and fresh sea food you could find</p>
+                                <div class = "card-details row">
+                                    <p class = "card-text card-text-time">ETA-20 min</p>
+                                    
+                                    <i class="fa fa-heart p-0 m-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <a href="../menu-foodhub/index.html" class = "btn btn-success">Order Now</a> 
+
+                        </div>
+
+                        <div class = "card filter center North-India">
+                            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/0e/99/1f/3b/a-good-looking-restaurant.jpg" class = "card-image">
+                            <div class = "card-body">
+                                <h5 class = "card-title">Domino's Pizza</h5>
+                                <p class = "card-text">The most deliciuos and fresh sea food you could find</p>
+                                <div class = "card-details row">
+                                    <p class = "card-text card-text-time">ETA-20 min</p>
+                                    
+                                   <i class="fa fa-heart" aria-hidden="true"></i>
+                                   <i class="fa fa-heart" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+                            <a href="../menu-foodhub/index.html" class = "btn btn-success">Order Now</a> 
+
+                        </div>
+
+
+                        <div class = "card filter center North-India">
+                            <img src = "https://images.adsttc.com/media/images/5e4c/1025/6ee6/7e0b/9d00/0877/large_jpg/feature_-_Main_hall_1.jpg?1582043123" class = "card-image">
+                            <div class = "card-body">
+                                <h5 class = "card-title">Roastery</h5>
+                                <p class = "card-text">The most deliciuos and fresh sea food you could find</p>
+                                <div class = "card-details row">
+                                    <p class = "card-text card-text-time">ETA-20 min</p>
+                                    
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+
+                                </div>
+                            </div>
+                            <a href="../menu-foodhub/index.html" class = "btn btn-success">Order Now</a> 
+
+                        </div>
+                    </div>       
+                </div>
+            </div>    
+        </div>
+        
+        <footer>
+            <div class="row ">
+                <div class="col-6 p-5">
+                    <div class="brand large">
+                        <a href="">
+                            Food<span class = "hunt">Hunt</span>
+            
+                        </a> 
+                    </div>
+                    <div class="social-media d-flex align-items-end pl-4">
+                        <i class="fa fa-facebook p-4" aria-hidden="true"></i>
+                        <i class="fa fa-instagram p-4" aria-hidden="true"></i>
+                        <i class="fa fa-twitter p-4 " aria-hidden="true"></i> 
+                    </div>
+                    <hr class="bg-light"> 
+                    <p class="footer-text small">© Copyright 2020 FoodHunt.</p>
+    
+                </div>
+                <div class="col-3 link-block">
+                    <ul>
+                        <li class="footerlink f1-link1"><a href="" class="link">About</a></li>
+                        <li class="footerlink f1-link2"><a href="" class="link small">Read Our Blog</a></li>
+                        <li class="footerlink f1-link3"><a href="" class="link small">Create a business account</a></li>
+                        <li class="footerlink f1-link4"><a href="" class="link small">Add Your Restuarent</a></li>
+                        <li class="footerlink f1-link5"><a href="" class="link small">Sign Up to deliver</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-3 link-block">
+                    <ul>
+                        <li class="footerlink f2-link1"><a href="" class="link">Get Help</a></li>
+                        <li class="footerlink f2-link2"><a href="" class="link small">Read FAQs</a></li>
+                        <li class="footerlink f2-link3"><a href="" class="link small">View All cities</a></li>
+                        <li class="footerlink f2-link4"><a href="" class="link small">Restarents Near me</a></li>
+                        <li class="footerlink f2-link5"><a href="" class="link small">Save on yoyr first order</a></li>
+                        <li class="footerlink f2-link6 small">Language:<a href="" class="link">English</a></li></div>
+                    </ul>
+            </div>
+        
+            
+        </footer>
+
+        <!-- javscript link -->
+        <script type = "text/javascript" src = "app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+3 pages
+main for customers page - arafath 
+	categories orientation change
+	add offers section
+	add benefits and famous around you
+	add locations
+	add footer
+reataurents select page :-  omar
+	almost finished.presentable
+	
+
+food in restaurents page - to be done
+
+
+main for business - :
+	2 types: without login: omar
+		form for restaurent
+		sections: advertisements, why foodhunt, contact us / know more form, 
+		footer
+		
+		after login: adnan (whole page)
+			landing section
+			retaurent overview
+			food items in your restaurent section
+			add more items  to restaurent form
+			edit details section(later)
+			footer and locations
+			

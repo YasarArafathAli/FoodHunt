@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHunt | Business</title>
+
+    <script src="https://kit.fontawesome.com/c9a392e4e1.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="navigation ">
+        <div class="brand">
+          <a href="../index.html">
+          
+            <h1>Food<span class="hunt">Hunt</span><sub><span class="hunt"><br> for</span> business</sub></h1>    
+          </a>
+        </div>
+        <ul>
+            <!-- <li class="navItems active"><a href="#">Home</a></li> -->
+            <div class="login-box">
+                <a class="login-text" data-toggle="modal" data-target="#LoginModal" href="">Login</a>
+                
+                    <i class="far fa-user-circle login-btn"></i>
+            </div>
+        </ul>
+    </header>
+
+
+
+        <d>
+            <section class="banner">
+                <h2 class="banner-title">Partner with <titled>Food<span class="hunt">Hunt</span></title> </h2>
+                <p class="sub-title">Add your Customizable Food items and get more customers!</p>
+
+                
+            </section>
+
+            <section id="restaurant-dtls" class="row">
+              <div class="col-6 Restaurent-details d-flex">
+                <div class="R-img">
+                  <img class="restaurant-img" src="restaurant.jpg" alt="">
+  
+                </div>
+                <div class="R-info">
+                  <h2>Zaiqa Chicken Shawarma</h2>
+                  <p>Arabian</p>
+                  <p>Banjara Hills Rd.no-3</p>
+                  <p>Contact No: 9876543210</p>
+                  <button type="button" class="btn btn-outline-dark">Edit Details</button>
+                              <button type="button" class="btn btn-outline-dark">Delete Restaurant</button>
+  
+                </div>
+
+              </div>
+              <div class="col-6 recent-orders">
+                <h2>recent orders</h2>
+                  <ol type="1" id="iframe-content">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odio</li>
+                  </ol>
+                  
+                
+            </section>
+                <hr>
+
+
+                <section class="orders">
+                  <div class="current-orders"></div>
+                </section>
+            <section>
+                <h3 id="current-dishes">Your Current Food Items</h3>
+
+                <div class="card mb-3" style="max-width: 800px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img class="food-pic" src="product-2.jpg" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken Shawarma-special(without salad)</h5>
+                          <p class="card-text">Fresh rumali loaded with diced chicken. <br>Cost: &#8377 120</p>
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-dark">Edit</button>
+                            <button type="button" class="btn btn-outline-dark">Delete</button>
+                          </div>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 800px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img class="food-pic" src="product-2.jpg" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken Shawarma with Salad</h5>
+                          <p class="card-text">Fresh rumali loaded with diced chicken and veges. <br>Cost: &#8377 100</p>
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-dark">Edit</button>
+                            <button type="button" class="btn btn-outline-dark">Delete</button>
+                          </div>
+                          <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="max-width: 800px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img class="food-pic" src="product-2.jpg" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken BBQ Shawarma</h5>
+                          <p class="card-text">Fresh rumali loaded with diced BBQ chicken. <br>Cost: &#8377 130</p>
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-dark">Edit</button>
+                            <button type="button" class="btn btn-outline-dark">Delete</button>
+                          </div>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <section id="add-items">
+              <h2>Add your Food Item</h2>
+              <!-- <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div id="main" class="card">
+                            <div class="card-content">
+                                <div class="row">
+                                    <form id="task-form">
+                                      <div class="input-field col s12">
+                                        <input type="text" name="food-name" id="food-name">
+                                        <label for="food-name">Name of Food Item</label>
+                                      </div>
+                                      <div class="input-field col s12">
+                                        <textarea type="text" name="description" id="description"></textarea> 
+                                        <label for="description">Description</label>
+                                    
+                                      </div>
+                                      <input type="submit" value="Add to the list" class="btn">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <form action="" class="form-floating">
+              <label>Name of Food Item:</label>
+              <br>
+              <input type="text" >
+              <br>
+              <label>Cost:</label>
+              <br>
+              <input type="number" placeholder="in &#8377">
+              <br>
+              <label >Description:</label>
+              <br>
+              <textarea name="" id="" cols="43" rows="1"></textarea>
+              <br>
+              <label >Tags:</label>
+              <br>
+              <input type="text" placeholder="optional">
+              <br>
+              <button class="btn btn-outline-dark" type="reset">RESET</button>
+              <button class="btn btn-outline-dark" type="submit">SUBMIT</button>
+            </form>
+            </section>
+
+            <footer>
+              <div class="row ">
+                  <div class="col-6 p-5">
+                      <div class="brand large">
+                          <a href="">
+                              Food<span class = "hunt">Hunt</span>
+              
+                          </a> 
+                      </div>
+                      <div class="social-media d-flex align-items-end pl-4">
+                          <i class="fa fa-facebook p-4" aria-hidden="true"></i>
+                          <i class="fa fa-instagram p-4" aria-hidden="true"></i>
+                          <i class="fa fa-twitter p-4 " aria-hidden="true"></i> 
+                      </div>
+                      <hr class="bg-light"> 
+                      <p class="footer-text small">© Copyright 2020 FoodHunt.</p>
+      
+                  </div>
+                  <div class="col-3 link-block">
+                      <ul>
+                          <li class="footerlink f1-link1"><a href="" class="link">About</a></li>
+                          <li class="footerlink f1-link2"><a href="" class="link small">Read Our Blog</a></li>
+                          <li class="footerlink f1-link3"><a href="" class="link small">Create a business account</a></li>
+                          <li class="footerlink f1-link4"><a href="" class="link small">Add Your Restuarent</a></li>
+                          <li class="footerlink f1-link5"><a href="" class="link small">Sign Up to deliver</a></li>
+                         
+                      </ul>
+                  </div>
+                  <div class="col-3 link-block">
+                      <ul>
+                          <li class="footerlink f2-link1"><a href="" class="link">Get Help</a></li>
+                          <li class="footerlink f2-link2"><a href="" class="link small">Read FAQs</a></li>
+                          <li class="footerlink f2-link3"><a href="" class="link small">View All cities</a></li>
+                          <li class="footerlink f2-link4"><a href="" class="link small">Restarents Near me</a></li>
+                          <li class="footerlink f2-link5"><a href="" class="link small">Save on yoyr first order</a></li>
+                          <li class="footerlink f2-link6 small">Language:<a href="" class="link">English</a></li></div>
+                      </ul>
+              </div>
+          
+              
+          </footer>
+
+    <!-- <footer id="footer">
+        <a class="social-media" href="https://www.instagram.com/mohammad_adnan31/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a class="social-media" href="https://twitter.com/_mohammed_31"><i class="fab fa-twitter"></i></a>
+        <a class="social-media" href="https://www.linkedin.com/in/mohammad-adnan-hejazi-8838591b4/"><i class="fab fa-linkedin"></i></a>
+        <a class="social-media" href="mailto:adnan.mah444@gmail.com"><i class="fas fa-envelope"></i></a>
+        <p class="footer-text">© Copyright 2020 FoodHunt.</p>
+    
+      </footer> -->
+      <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

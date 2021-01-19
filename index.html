@@ -27,32 +27,95 @@
 </head>
 
 <body>
-    <header class="navigation ">
+ 
+    <header class="navigation">
         <div class="brand">
-            Food Hunt</div>
-        <!-- 
-                    
-                    Pakwaan        
-                    Meal Hut                      
-                    -->
+            <a href="">
+                Food<span class = "hunt">Hunt</span>
+
+            </a>
+        </div>
+      
         <ul>
             <li class="navItems active"><a href="#">Home</a></li>
-            <li class="navItems"><a href="#">Dine Out</a></li>
-            <!-- <li class="navItems"> -->
+            <!-- <li class="navItems "><a href="#">Order now</a></li> -->
+          
             <div class="login-box">
                 <a class="login-text" href="">Login</a>
-                <a class="login-btn" href="">
+                <a class="login-btn" data-toggle="modal" data-target="#LoginModal"  href="#">
                     <i class="far fa-user-circle"></i>
                 </a>
             </div>
-            <!-- </li> -->
 
         </ul>
     </header>
+<!------------------------------------------------ Modal ---------------------------------------------->
+<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <!-- =================omar modal=================== -->
+        <div class = "modals" id = "modals">
+            <header class = "modTitle">
+                <div class = "tablets">
+                    <div id = "btn"></div> 
+                    <a class= "sign sign-In active" id = "sIn" onclick = "signin()" href = "#">Login</a>
+                    <hr class = "hr">
+                    <a class = "sign sing-Up" id = "sUp" onclick = "signup()" href = "#">Sign-Up</a>
+                </div>
+            </header>
+                    
+         
 
+        
+            <form id = "logForm" class = " Data LogData" method="GET">
+                
+                <div class = "form userName" for=""  id = "user1">Username</div>
+                <input required class = "bar userLog" type="text" name="userLog" id="userLog">
+ 
+                <div class = "form password" for="" id = "pass1">Password</div>
+                <input required class = "bar passLog" type="password" name="passLog" id="passLog">
+                
+                <button type = "button" id = "loginButton" class = " submit btn btn-success btn-lg">Login</button>
+                
+               
+            
+            </form>
+            <form id = "regiForm" class = " Data signData" method="GET">
+                
+                <div class = "form eMail" for="" >E-mail</div>
+                <input required class = "bar mailSign" type="email" name="mailSign" id="mailSign">
+                
+                <div class = "form userName" for="" >Username</div>
+                <input required class = "bar userSign" type="text" name="userSign" id="userSign">
+
+                <div class = "form password" for="">Password</div>
+                <input required class = "bar passSign" type="password" name="passSign" id="passSign">
+
+                <!-- <div class = "form con-password" for="">Confirm Password</div>
+                <input class = "bar" type="password" name="" id=""> -->
+
+                <button type = "button" id = "signupButton" class = " submit btn btn-success btn-lg">Sign-Up</button>
+
+            </form>
+
+            
+            <div class = "or">
+                <h4 class = "cond">Or</h4>
+            </div>
+
+            <div class = "icons"> 
+                <a href = "https://www.facebook.com/login.php" target="_blank"><img src = "fb.png" alt = "Facebook" title = "Facebook" ></a><hr>
+                <a href = "https://www.facebook.com/login.php" target="_blank"><img src = "google.png" alt = "Gmail" title = "Gmail"></a>
+            </div> 
+           
+        </div>
+      </div>
+    </div>
+  </div>
     <section class="banner">
-        <h2 class="">Food Hunt</h2>
-        <form action="">
+        <h2 class="banner-title pb-0">Food <span>Hunt</span> </h2>
+        <h4 class="pt-0 pb-4">Hungry? Let's Hunt.</h4>
+        <form action="./restraunts/index.html">
             <div class="search">
                 <select name="place" id="">
                     <option value="">Banjara Hills</option>
@@ -68,7 +131,7 @@
     </section>
 
 
-    <section class="catagories ">
+    <!-- <section class="catagories ">
         <div class="container-fluid">
             
             <div class="row justify-content-around">
@@ -149,9 +212,232 @@
                     </div>
                 </div>
             </div>
+            
+            
+
+            
+        </div>
+    </section> -->
+    
+    <section class="categories">
+        <div class="category-head"><h2 class="p-4">Categories</h2></div>
+        <div class="category-body">
+            <div class="category-block block1">
+                <a href="./restraunts/index.html">
+                    <h2 class="block-name">Burgers</h2>
+
+                </a>
+            </div>
+            <div class="category-block block2">
+                <a href="./restraunts/index.html">
+
+                    <h2 class="block-name">Pizzas</h2>
+                </a>
+            </div>
+            <div class="category-block block3">
+                <a href="./restraunts/index.html">
+                    <h2 class="block-name">Desserts</h2>
+
+                </a>
+            </div>
+            <div class="category-block block4">
+                <a href="./restraunts/index.html">
+
+                    <h2 class="block-name">Beverages</h2>
+                </a>
+            </div>
+            <div class="category-block block5">
+                <a href="./restraunts/index.html">
+                    <h2 class="block-name">Indian</h2>
+
+                </a>
+            </div>
+            <div class="category-block block6">
+                <a href="./restraunts/index.html">
+                    <h2 class="block-name">Chinese</h2>
+
+                </a>
+            </div>
+
         </div>
     </section>
+
+    <section class="why mt-0 pt-0">
+        <div class="row mt-0 pt-0 why-row d-flex justify-content-center">
+            <div class="col-4 mt-0 pt-0 why-block  ">
+                <div class="why-img mt-0 pt-0 d-flex justify-content-center">
+                    <img class="mt-0" src="./images/No_min_order.png" alt="">
+                </div>
+                <div class="why-info pt-5" >
+                    <h5 class="d-flex justify-content-center">No Minimum order</h5>
+                    <p class="small text-center">Order in for yourself or for the group, <br> with no restrictions on order value</p>
+                </div>
+
+            </div>
+            <div class="col-4 why-block ">
+                <div class="why-img d-flex justify-content-center">
+                    <img src="./images/Live_order.png" alt="">
+                </div>
+                <div class="why-info pt-5">
+                    <h5 class="d-flex justify-content-center">Live Order</h5>
+                    <p class="small text-center"> Know where your order is at all times, <br> from the restaurant to your doorstep</p>
+                </div>
+            </div>
+            <div class="col-4 why-block sfd ">
+                <div class="why-img d-flex justify-content-center">
+                    <img src="./images/Super_fast_delivery2.png" alt="">
+                </div>
+                <div class="why-info sfd2 pt-5">
+                    <h5 class="d-flex justify-content-center ">Super Fast Delivery</h5>
+                    <p class="small text-center">
+                    Experience FoodHunt's superfast delivery <br> for food delivered fresh & on time </p>
+                </div>
+            </div>
+        </div>
     </section>
+
+
+    <section id="services">
+        <div class="service-head">
+            <h1>Our Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eos pariatur itaque quod consequuntur molestiae delectus, tempore deleniti nisi quibusdam enim adipisci voluptatum sint ipsam beatae ab, quas sit at.</p>
+        </div>
+        <div class="row service-body d-flex justify-content-around">
+            <div class="col-3 meal-type ">
+                <div class="s-img">
+                    <img src="./images/breakfast.png" alt="breakfast">
+                </div>
+                <div class="s-info d-flex flex-column">
+                    <h2>Breakfast</h2>
+                    <p class="align-self-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A optio tenetur impedit</p>
+                </div>
+            </div>
+            <div class="col-3 meal-type">
+                <div class="s-img">
+                    <img src="./images/lunch.png" alt="Lunch">
+                </div>
+                <div class="s-info d-flex flex-column">
+                    <h2>Lunch</h2>
+
+                    <p class="align-self-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A optio tenetur impedit</p>
+                </div>
+            </div>
+            <div class="col-3 meal-type">
+                <div class="s-img">
+                    <img src="./images/dinner.png" alt="">
+
+                </div>
+                <div class="s-info d-flex flex-column">
+                    <h2>Dinner</h2>
+                    <p class="align-self-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A optio tenetur impedit</p>
+
+                </div>
+            </div>
+            <div class="col-3 meal-type">
+                <div class="s-img">
+                    <img src="./images/drink.png" alt="">
+
+                </div>
+                <div class="s-info d-flex flex-column">
+                    <h2>Drinks</h2>
+
+                    <p class="align-self-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A optio tenetur impedit</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="locations">
+        <div class="location-head"><h4 class="p-5">We Deliver to</h4></div>
+        <div class="location-body d-flex justify-content-center">
+            <iframe class="m-2 "  src="https://www.atlistmaps.com/map/c0021134-ee19-4636-a5ad-7a00887f6b54?share=true" allow="geolocation" width="100%" height="350px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+          <ul class="location-list list1 ">
+              <li class="location-item location1">Mumbai</li>
+              <li class="location-item location2">Delhi</li>
+              <li class="location-item location3">Chennai</li>
+              <li class="location-item location4">Hyderabad</li>
+              <li class="location-item location5">Kolkata</li>
+              <!-- <li class="location-item location6">Ranchi</li> -->
+              
+          </ul>
+          <ul class="location-list list2 ">
+            <li class="location-item location7">Noida</li>
+            <li class="location-item location8">Warangal</li>
+            <li class="location-item location9">Jaipur</li>
+            <li class="location-item location10">Kota</li>
+            <li class="location-item location11">Chandigarh</li>
+            <!-- <li class="location-item location12">Bhopal</li> -->
+              
+             
+              
+            </ul>
+            <ul class="location-list list3 ">
+
+                <li class="location-item location13">Gwalior</li>
+                <li class="location-item location14">Ahmedabad</li>
+                <li class="location-item location15">Lucknow</li>
+                <li class="location-item location16">Agra</li>
+                <li class="location-item location17">Patna</li>
+                <!-- <li class="location-item location18">Nagpur</li> -->
+              
+              
+                
+            </ul>
+              <ul class="location-list list4 ">
+
+                <li class="location-item location19">Ballarsha</li>
+                <li class="location-item location20">Chandrapur</li>
+                <li class="location-item location21">Pune</li>
+                <li class="location-item location22">Bhuvaneshwar</li>
+                <li class="location-item location23">Rourkela</li>
+                <!-- <li class="location-item location24">Vishakhapatnam</li> -->
+
+
+          </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="row ">
+            <div class="col-6 p-5">
+                <div class="brand large">
+                    <a href="">
+                        Food<span class = "hunt">Hunt</span>
+        
+                    </a> 
+                </div>
+                <div class="social-media d-flex align-items-end pl-4">
+                    <i class="fa fa-facebook p-4" aria-hidden="true"></i>
+                    <i class="fa fa-instagram p-4" aria-hidden="true"></i>
+                    <i class="fa fa-twitter p-4 " aria-hidden="true"></i> 
+                </div>
+                <hr class="bg-light"> 
+                <p class="footer-text small">© Copyright 2020 FoodHunt.</p>
+
+            </div>
+            <div class="col-3 link-block">
+                <ul>
+                    <li class="footerlink f1-link1"><a href="#" class="link">About</a></li>
+                    <li class="footerlink f1-link2"><a href="#" class="link small">Read Our Blog</a></li>
+                    <li class="footerlink f1-link3"><a href="./business/index.html" class="link small">Create a business account</a></li>
+                    <li class="footerlink f1-link4"><a href="./business-afterlogin/index.html" class="link small">Add Your Restuarant</a></li>
+                    <li class="footerlink f1-link5"><a href="" class="link small">Sign Up to deliver</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-3 link-block">
+                <ul>
+                    <li class="footerlink f2-link1"><a href="" class="link">Get Help</a></li>
+                    <li class="footerlink f2-link2"><a href="" class="link small">Read FAQs</a></li>
+                    <li class="footerlink f2-link3"><a href="" class="link small">View All cities</a></li>
+                    <li class="footerlink f2-link4"><a href="" class="link small">Restaurants Near me</a></li>
+                    <li class="footerlink f2-link5"><a href="" class="link small">Save on your first order</a></li>
+                    <li class="footerlink f2-link6 small">Language:<a href="" data-toggle="modal" data-target="#LoginModal" class="link">English</a></li></div>
+                </ul>
+        </div>
+    
+        
+    </footer>
+</section>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

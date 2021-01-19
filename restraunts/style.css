@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+ol, ul {
+    list-style: none;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+a:visited{
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+body {
+    background-color: rgba(222, 233, 241, 0.678);
+    font-size: 1.5rem;
+	line-height: 1;
+}
+
+
+header.navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(213, 10%, 18%);  /*  ffd100*/
+    
+    padding: 10px 10px 0px 10px;
+} 
+
+.brand{
+    margin-left: 40px;
+    user-select: none;
+    font-family: 'Kaushan Script', cursive;
+  /* font-family: "Dosis", sans-serif; */
+
+    border: #000000;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1.5rem;
+
+}
+.hunt{
+    color: #ff6d2d;
+}
+
+.brand.large{
+    font-size: 50px;
+}
+
+
+.navigation ul{
+    
+    display: flex;
+    padding-right: 45px;
+   
+}
+.navItems {
+    display: inline-block;
+    padding-left: 10px;
+    
+    
+}
+
+.navItems a{
+    display: flex;
+    align-self: baseline;
+    /* border: #000000 2px solid; */
+    border-radius: 5px;
+    margin-top: 7px;
+    padding: 8px;
+    font-family: 'Istok Web';
+    font-weight: 600;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    color: white;
+    text-decoration: none;
+}
+
+.navItems a:hover , .navItems.active a{
+    /* background-color: #ff6d2d; */
+    color: #000000;
+    transform:  scale(1.1);
+    transition-timing-function: ease;
+}
+.navItems.active a{
+    background-color: #ff6d2d;
+    transform:  scale(1.1);
+    transition-timing-function: ease;
+    
+}
+.login-box:hover > .login-text{
+    width: 50px;
+
+
+}
+
+.login-box{
+    margin-top: 0.55rem;
+    position: relative;
+    bottom: 9px;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px;
+    color: white;
+    align-items: center;
+    padding-bottom: 20px;
+    /* text-decoration: none; */
+}
+
+.login-btn{
+    /* margin-top: 0.55rem; */
+    color: white;
+    border-radius: 50px;
+    float: right;
+    text-decoration: none;
+}
+.far{
+    float: right;
+    
+}
+.far:hover{
+    color: rgb(250, 239, 239);
+    transform:  scale(1.1);
+    transition-timing-function: ease;
+}
+
+.login-text{
+    
+    color: white;
+    padding: 0;
+    overflow: hidden;
+    float: left;
+    margin-top: 5px;
+    outline: none;
+    transition: 0.4s;
+    width: 0; 
+    font-size: 1rem;
+    font-family: 'Istok Web';
+    font-weight: 600; 
+}
+.login-box .login-text{
+    
+    text-decoration: none;
+}
+.login-text:hover{
+    /* background-color: #ff6d2d; */
+    color: rgb(255, 255, 255);
+    transform:  scale(1.1);
+    transition-timing-function: ease;
+}
+
+/* ======================================================================= */
+
+.menu-banner{
+    height: 40vh;
+    background: url(https://www.hdnicewallpapers.com/Walls/Big/Food%20and%20Drinks/Fast_Food_Dishes_for_Takeaway_in_Bar_4K_Wallpapers.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.menu-banner .search{
+    padding: 15px 25px 15px 25px;
+    background-color: rgb(255, 255, 246);
+    
+    box-shadow: #ffd0007c 15px;
+    border-radius: 35px;
+}
+
+.menu-banner input.search, .menu-banner input.search:focus, .menu-banner input.search:active{
+    font-size: 1rem;
+    width: 300px;
+    height: 35px;
+    padding: 15px;
+    border: none;
+    /* border: #2b2b2b 2px solid; */
+    background: transparent;
+    border-radius: 7px;
+}
+.menu-banner select, .menu-banner select:focus{
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 180px;
+    border: none;
+    height: 34px;
+    background: transparent;
+    padding: 5px;
+    /* border: none;
+    border: #2b2b2b 2px solid;
+    border-radius: 5px; */
+}
+ */
+.menu-banner .order{
+    font-size: 25px;
+    
+    text-decoration: none;
+    border: none;
+}
+
+.menu-banner .order:hover{
+    background-color: rgb(248, 211, 0);
+
+}   
+
+/* ====================================================================== */
+
+.container{
+    display: flex;
+    margin-left: 5%;
+    justify-content: space-around;
+}
+
+
+.side-container{
+    margin-top: 3%;
+}
+.side-menu{
+    
+    position: sticky;
+    margin: 5% 15% ;
+    border: 1px;
+    top: 10%;
+    border-radius: 8px;
+    box-shadow: 4px 2px 15px rgb(194, 192, 192);
+    background-color: rgb(255, 255, 255);
+}
+.menu-head{
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    margin: 7% auto;
+}
+
+.side-menu ul{
+    padding: 0;
+    margin: 0;
+    
+}
+.side-menu, ul, li{
+    list-style: none;
+
+    
+}
+.menu{
+
+    display: flex;
+    justify-content: center;
+
+}
+.menu a{
+    
+    text-decoration: none;
+}
+.menu-items {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: #ff6d2d;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-weight: bold;
+
+
+
+}
+.menu-items:hover{
+    background-color: #ff6d2d;
+    color: #000000;
+    
+}
+.rest-container{
+    display: inline;
+    margin-top: 3%;
+
+}
+.rest-list{ 
+    margin-left: 10% ;
+    margin: 15px;
+  
+}
+
+.card{
+    border: 10px solid white;
+    border-radius: 5px;
+    width:  20.3rem;
+    margin: 10px;
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.384);
+}
+
+
+.card-image{
+    border-radius: 5px;
+    height: 18rem;
+
+} 
+
+.card:hover{
+    background-color: #f1fff1;
+    border: 10px solid #f1fff1;
+    box-shadow: 5px 2px 35px rgba(0, 0, 0, 0.384);
+}
+
+
+.card-title{
+    font-size: 2rem;
+}
+.card-text{
+    font-size: 20px;
+    color: #353333;
+} 
+
+.card .card-body span{
+    transform: scale(.8) translate(5px, -8px);
+}
+
+.card-details{
+    display: flex;
+    justify-content: space-around;
+}
+.card-text-time{
+    font-size: 18px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* ======================================footer====================== */
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    
+    }
+    .footerlink{
+        padding: 15px 0;
+        width: 90%;
+    }
+    
+    .link-block{
+        padding: 0;
+        padding-top: 50px;
+    }
+    
+    .social-media{
+        height: 150px;
+    }

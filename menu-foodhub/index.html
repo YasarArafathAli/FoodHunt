@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script src="https://kit.fontawesome.com/c9a392e4e1.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Order Menu</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__center ">
+      <div class="nav__logo">
+        <a href="../index.html">
+          <h1>Food<span>Hunt</span></h1>
+        </a>
+      </div>
+
+      <ul class="nav__list">
+        <a href="" class="login" >Login</a>
+        <div class="cart__icon">
+          
+          <h2>cart</h2>
+          <span class="item__total">0</span>
+        </div>
+      </ul>
+
+      <div class="hamburger">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation -->
+
+  <!-- Modal -->
+
+
+
+  <!-- Products -->
+  <section class="products">
+    <div class="product__center">
+    </div>
+  </section>
+
+  <section class="cart__overlay">
+    <div class="cart">
+      <span class="close__cart">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </span>
+      <h1>Your Cart</h1>
+      <div class="cart__centent">
+       
+      </div>
+
+      <div class="cart__footer">
+        <h3>Total: 	&#x20B9; <span class="cart__total">0</span></h3>
+        <button class="clear__cart btn-primary">Proceed to Checkout</button>
+        <button class="clear__cart btn">Clear Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="row ">
+        <div class="col-6 p-5">
+            <div class="brand large">
+                <a href="">
+                    Food<span class = "hunt">Hunt</span>
+    
+                </a> 
+            </div>
+            <div class="social-media d-flex align-items-end pl-4">
+                <i class="fa fa-facebook p-4" aria-hidden="true"></i>
+                <i class="fa fa-instagram p-4" aria-hidden="true"></i>
+                <i class="fa fa-twitter p-4 " aria-hidden="true"></i> 
+            </div>
+            <hr class="bg-light"> 
+            <p class="footer-text small">© Copyright 2020 FoodHunt.</p>
+
+        </div>
+        <div class="col-3 link-block">
+            <ul>
+                <li class="footerlink f1-link1"><a href="#" class="link">About</a></li>
+                <li class="footerlink f1-link2"><a href="#" class="link small">Read Our Blog</a></li>
+                <li class="footerlink f1-link3"><a href="./business/index.html" class="link small">Create a business account</a></li>
+                <li class="footerlink f1-link4"><a href="./business-afterlogin/index.html" class="link small">Add Your Restuarant</a></li>
+                <li class="footerlink f1-link5"><a href="" class="link small">Sign Up to deliver</a></li>
+               
+            </ul>
+        </div>
+        <div class="col-3 link-block">
+            <ul>
+                <li class="footerlink f2-link1"><a href="" class="link">Get Help</a></li>
+                <li class="footerlink f2-link2"><a href="" class="link small">Read FAQs</a></li>
+                <li class="footerlink f2-link3"><a href="" class="link small">View All cities</a></li>
+                <li class="footerlink f2-link4"><a href="" class="link small">Restaurants Near me</a></li>
+                <li class="footerlink f2-link5"><a href="" class="link small">Save on your first order</a></li>
+                <li class="footerlink f2-link6 small">Language:<a href="" data-toggle="modal" data-target="#LoginModal" class="link">English</a></li></div>
+            </ul>
+    </div>
+
+    
+</footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

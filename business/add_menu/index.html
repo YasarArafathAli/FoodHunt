@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHunt | Menu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="https://kit.fontawesome.com/c9a392e4e1.js" crossorigin="anonymous"></script>
+    <!--font-family link-->
+    <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Istok Web' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header class="navigation ">
+        <div class="brand">
+            <h1>Food<span class="span">Hunt</span></h1>    
+        </div>
+        <ul>
+            <!-- <li class="navItems active"><a href="#">Home</a></li> -->
+            <div class="login-box">
+                <a class="login-text" data-toggle="modal" data-target="#LoginModal" href="">Login</a>
+                
+                    <i class="far fa-user-circle login-btn"></i>
+            </div>
+        </ul>
+    </header>
+    <!-- <section class="banner"></section>  -->
+    
+    <div class="container">
+        <div class="row">
+            <!-- restraunt address -->
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <span class="card-title">Add you restraunt</span>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" class="task">
+                                    <label for="task">Restraunt name</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" class="task">
+                                    <label for="task">Owner name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input type="email" name="task" class="task">
+                                    <label for="task">Email</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" class="task">
+                                    <label for="task">City</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" class="task">
+                                    <label for="task">Address / Landmark</label>
+                                </div>
+
+                                <div class = "input-field col s12">
+                                    <h2> Are you the owner of the restraunt?</h2>
+                                    <br>
+                                    <h6>
+                                    <label>
+                                        <input name = "group1" type = "radio" checked>
+                                        <span>Yes, I am the owner</span>
+                                    </label>
+                                    </h6>
+                                    <br>
+
+                                    <h6>
+                                    <label>
+                                        <input  name = "group1" type = "radio" >
+                                        <span>No, I am not the owner</span>
+                                    </label>
+                                    </h6>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" class="task">
+                                    <label for="task">Mobile Number</label>
+                                </div>
+
+                                <div class = "input-field col s12">
+                                    <h2>Opening status</h2>
+                                    <br>
+                                    <h6>
+                                    <label>
+                                        <input name = "group2" type = "radio" checked>
+                                        <span>This place is already open</span>
+                                    </label>
+                                    </h6>
+                                    <br>
+
+                                    <h6>
+                                    <label>
+                                        <input  name = "group2" type = "radio" >
+                                        <span>This place will open soon</span>
+                                    </label>
+                                    </h6>
+                                </div>                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- restraunt characteristics -->
+            
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <span class="card-title">Characteristics</span>
+                        <div class="row">
+                        <form id="task-form">
+                                        
+        
+                                       
+                            <div class = "input-field col s12">
+                                <h2>Isyour food Halal</h2>
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "radio" checked>
+                                    <span>YES</span>
+                                </label>
+                                </h6>
+                                <br> 
+                                <h6>
+                                <label>
+                                    <input  name = "char-group1" type = "radio" >
+                                    <span>NO</span>
+                                </label>
+                                </h6>
+                            </div>
+
+                            <div class = "input-field col s12">
+                                <h2>Do you serve alcohol</h2>
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group2" type = "radio" checked>
+                                    <span>YES</span>
+                                </label>
+                                </h6>
+                                <br>
+                                <h6>
+                                <label>
+                                    <input  name = "char-group2" type = "radio" >
+                                    <span>NO</span>
+                                </label>
+                                </h6>
+                            </div>
+        
+                                       
+        
+                            <div class = "input-field col s12">
+                                <h2>Payment status</h2>
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group2" type = "checkbox">
+                                    <span>card</span>
+                                </label>
+                                </h6>
+                                <h6>
+                                <label>
+                                    <input  name = "char-group2" type = "checkbox" >
+                                    <span>cash</span>
+                                </label>
+                                </h6>
+                                <h6>
+                                    <label>
+                                        <input  name = "char-group2" type = "checkbox" >
+                                        <span>Netbanking</span>
+                                        
+                                    </label>
+                                </h6>
+                                <h6>
+                                    <label>
+                                        <input  name = "char-group2" type = "checkbox" >
+                                        <span>UPI</span>
+                                    </label>
+                                </h6>
+                            </div>
+
+                            <div class = "input-field col s12">
+                                <h2>Cuisines</h2>
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>Mughlai</span>
+                                </label>
+                                </h6>
+                                            
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>Lebanese</span>
+                                </label>
+                                </h6>    
+                                            
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>Indian</span>
+                                </label>
+                                </h6>
+                                            
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>Turkish</span>
+                                </label>
+                                </h6>        
+                                        
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>Chinese</span>
+                                </label>
+                                </h6>    
+                                        
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>Arabian</span>
+                                </label>
+                                </h6>
+                                        
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>Italian</span>    
+                                </label>
+                                </h6>
+
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>American</span>    
+                                </label>
+                                </h6>
+
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>European</span>    
+                                </label>
+                                </h6>
+
+                                <br>
+                                <h6>
+                                <label>
+                                    <input name = "char-group1" type = "checkbox" >
+                                    <span>Fast food</span>    
+                                </label>
+                                </h6>
+                                            
+                            </div>
+                                        <!-- <div class="input-field col s12">
+                                            <select>
+                                                <option value="" disabled selected>Cuisine</option>
+                                                <option value="1">Arabian</option>
+                                                <option value="2">Lebanese</option>
+                                                <option value="3">Mughlai</option>
+                                                <option value="4">Indian</option>
+                                                <option value="5">Chinese</option>
+                                                <option value="6">Itailan</option>
+                                                <option value="7">Pizza</option>
+                                                <option value="8">Pasta</option>
+                                                <option value="9">Desert</option>
+                                                <option value="10">Shakes</option>
+                                                <option value="11">Cakes</option>
+                                                <option value="12">Vegan</option>
+                                                <option value="13">Seafood</option>
+                                                <option value="14">Turkish</option>
+                                                <option value="15">Burgers</option>   
+                                            </select>
+                                            <label>Cuisines</label>
+                                        </div> -->                  
+                        </form>
+                        </div>
+                    </div>
+                </div>
+               
+
+            <!-- restraunt timings -->
+            
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <span class="card-title">Timings</span>
+                            <div class="row">
+                                <form id="task-form">
+                                                
+                                    <div class = "input-field col s12">
+                                        <h2>Open on days</h2>
+                                        <br>
+                                        <h6>
+                                        <label>
+                                            <input name = "char-group1" type = "checkbox" >
+                                            <span>Sonday</span>
+                                        </label>
+                                        </h6>
+                                                    
+                                        <br>
+                                        <h6>
+                                        <label>
+                                            <input name = "char-group1" type = "checkbox" >
+                                            <span>Monday</span>
+                                        </label>
+                                        </h6>    
+                                                    
+                                        <br>
+                                        <h6>
+                                        <label>
+                                            <input name = "char-group1" type = "checkbox" >
+                                            <span>Tuesday</span>
+                                        </label>
+                                        </h6>
+                                                    
+                                        <br>
+                                        <h6>
+                                        <label>
+                                            <input name = "char-group1" type = "checkbox" >
+                                            <span>Wednesday</span>
+                                        </label>
+                                        </h6>        
+                                                
+                                        <br>
+                                        <h6>
+                                        <label>
+                                            <input name = "char-group1" type = "checkbox" >
+                                            <span>Thursday</span>
+                                        </label>
+                                        </h6>    
+                                                
+                                        <br>
+                                        <h6>
+                                        <label>
+                                            <input name = "char-group1" type = "checkbox" >
+                                            <span>Friday</span>
+                                        </label>
+                                        </h6>
+                                                
+                                        <br>
+                                        <h6>
+                                        <label>
+                                            <input name = "char-group1" type = "checkbox" >
+                                            <span>Saturday</span>    
+                                        </label>
+                                        </h6>
+                                    </div>
+                                </form>
+                            </div>
+                    </div>
+                </div>
+
+            <!-- submit button -->
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <!-- <i class="material-icons right">send</i> -->
+                </button>
+            </div>
+
+            <!-- <div class="card-action">
+                 <h5 id="task-title"></h5> 
+                <ul class="collection"></ul>
+                <a href="#" class="clear-tasks btn black">Clear All dishes</a>
+            </div> -->
+            <!-- <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button> -->
+        </div>    
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

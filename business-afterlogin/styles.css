@@ -265,13 +265,59 @@ span.hunt{
 }
 #restaurant-dtls .recent-orders{
     border-left: #000000 1px solid;
+    /* height: 300px; */
+    
 }
 
+#restaurant-dtls .recent-orders{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+}
 #restaurant-dtls ol li{
-    padding: 10px;
+    padding: 15px;
 
 }
 
+/* ========================current orders========================== */
+
+.orders{
+    padding: 40px;
+}
+
+#orders-recieved{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 400px;
+}
+
+.orders table{
+    text-align: center;
+}
+
+.orders table tr th{
+    padding: 30px;
+    border: 1px #000 solid;
+    background-color: azure;
+}
+
+.orders table tr td{
+    padding: 30px;
+    border: 1px #000 solid;
+}
+
+.orders table tr #order{
+    /* padding: 30px; */
+    /* border: 1px #000 solid; */
+    padding: 0;
+}
+.orders table tr td table th{
+    /* padding: 30px; */
+    /* border: 1px #000 solid; */
+    padding: 0;
+    border: none;
+
+}
 #current-dishes{
     text-align: center;
     font-size: 50px;

@@ -444,7 +444,7 @@ background: linear-gradient(321deg, rgba(96,199,234,1) 18%, rgba(237,219,195,1) 
     margin: 50px;
     /* padding: 80px; */
     transform: rotateZ(5deg);
-    border: #040135 5px solid;
+    border: #040135 5px dashed;
     /* background-color: #ffffff; */
 
 }

@@ -22,7 +22,7 @@ class UI {
           <img src=${image} alt="" />
         </div>
         <div class="product__footer">
-          <h1>${title}>
+          <h1>${title}</h1>
           <div class="rating">
             <span>
               <svg>
